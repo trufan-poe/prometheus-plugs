@@ -53,7 +53,9 @@ defmodule PrometheusPlugs.Mixfile do
     [
       {:accept, "~> 0.1"},
       {:plug, "~> 1.0"},
-      {:prometheus_ex, "~> 1.1 or ~> 2.0 or ~> 3.0"},
+      {:prometheus_ex,
+      git: "https://github.com/trufan-poe/prometheus.ex",
+      ref: "update-delage"},
       {:prometheus_process_collector, "~> 1.1", optional: true},
 
       {:earmark, ">= 0.0.0", only: :dev},
